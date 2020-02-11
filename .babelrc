@@ -1,11 +1,12 @@
 {
+    "presets": ["@babel/preset-react"],
     "plugins": [
+        "macros",
         [
             "babel-plugin-styled-components",
             {
                 "displayName": true
             }
         ]
-    ],
-    "presets": ["@babel/preset-react"]
+    ]
 }

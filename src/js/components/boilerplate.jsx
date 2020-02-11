@@ -9,7 +9,7 @@ const StyledDiv = styled.div`
 `
 
 const TailwindComponent = styled.div`
-    ${tw`bg-blue-500`}
+    ${tw`bg-blue-500 mx-auto max-w-2xl p-3`}
 `
 
 const Boilerplate = () => {
