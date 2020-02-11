@@ -4,8 +4,8 @@
     "description": "Cosmic Division Front End Boilerplate",
     "main": "src/entry.js",
     "scripts": {
-        "start": "parcel src/index.html",
-        "build": "npm run format && parcel build src/index.html --public-url ./",
+        "start": "parcel src/index.html --no-sourcemaps",
+        "build": "parcel build src/index.html --public-url ./ --no-sourcemaps",
         "format": "npm run format-css && npm run format-js && npm run format-html",
         "format-css": "prettier --write src/styles/**/*.{css,scss} ",
         "format-js": "prettier --write src/**/*.{js,jsx}",
@@ -23,12 +23,19 @@
     },
     "homepage": "https://github.com/AndreBClark/cosmicdivision-boilerplate#readme",
     "dependencies": {
-        "tailwindcss": "^1.2.0"
+        "react": "^16.12.0",
+        "react-dom": "^16.12.0",
+        "styled-components": "^5.0.1"
     },
     "devDependencies": {
+        "@babel/preset-env": "^7.8.4",
+        "@babel/preset-react": "^7.8.3",
         "@fullhuman/postcss-purgecss": "^2.0.4",
         "@svgr/parcel-plugin-svgr": "^5.0.1",
         "autoprefixer": "^9.7.3",
+        "babel-plugin-macros": "^2.8.0",
+        "babel-plugin-styled-components": "^1.10.7",
+        "babel-plugin-tailwind-components": "^0.5.10",
         "cssnano": "^4.1.10",
         "cssnano-preset-advanced": "^4.0.7",
         "eslint": "^6.8.0",
@@ -44,6 +51,8 @@
         "sass": "^1.25.0",
         "stylelint": "^13.0.0",
         "stylelint-config-recommended": "^3.0.0",
-        "stylelint-prettier": "^1.1.2"
+        "stylelint-prettier": "^1.1.2",
+        "tailwind.macro": "^1.0.0-alpha.10",
+        "tailwindcss": "^1.2.0"
     }
 }
