@@ -4,10 +4,10 @@ import { Typography, Paper, Grid } from '@material-ui/core';
 import { Toolbox } from './components/Toolbox';
 import { SettingsPanel } from './components/SettingsPanel';
 import { Topbar } from './components/Topbar';
-import { Container } from './components/Container';
-import { Button } from './components/Button';
-import { Card } from './components/Card';
-import { Text } from './components/Text';
+import { Container } from './components/user/Container';
+import { Button } from './components/user/Button';
+import { Card } from './components/user/Card';
+import { Text } from './components/user/Text';
 export default function App() {
     return (
         <div style={{ margin: '0 auto', width: '800px' }}>

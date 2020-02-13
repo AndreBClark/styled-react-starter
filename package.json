@@ -4,7 +4,7 @@
     "description": "Cosmic Division Front End Boilerplate",
     "main": "src/entry.js",
     "scripts": {
-        "start": "parcel src/index.html --no-source-maps",
+        "start": "parcel src/index.html",
         "build": "parcel build src/index.html --public-url ./",
         "format": "npm run format-css && npm run format-js && npm run format-html",
         "format-css": "prettier --write src/styles/**/*.{css,scss} ",
