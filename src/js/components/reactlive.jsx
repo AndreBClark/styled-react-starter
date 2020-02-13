@@ -10,17 +10,17 @@ import tw from 'tailwind.macro';
 const EditorWrapper = styled(LiveEditor)`
     ${tw`bg-gray-900 p-4 m-2`}
 `
-const headerCode = `const StyledDiv = styled.div\`
-// editable code
+const headerCode = `// editable code
+const StyledDiv = styled.div\`
     background-color: tomato;
     padding: 1rem;
     max-width: 70rem;
     margin: auto;
 \`
 render(
-<StyledDiv>
-<h3>Styled Component</h3>
-</StyledDiv>
+    <StyledDiv>
+        <h3>Styled Component</h3>
+    </StyledDiv>
 )`
 const EditableComponent = () => {
     return(

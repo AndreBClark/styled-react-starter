@@ -1,22 +1,36 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Base from './components/base';
-import Boilerplate from './components/boilerplate';
-import EditableComponent from './components/reactlive';
-if (module.hot) {
-    module.hot.accept();
+import { Typography, Paper, Grid } from '@material-ui/core';
+import { Toolbox } from './components/Toolbox';
+import { SettingsPanel } from './components/SettingsPanel';
+import { Topbar } from './components/Topbar';
+import { Container } from './components/Container';
+import { Button } from './components/Button';
+import { Card } from './components/Card';
+import { Text } from './components/Text';
+export default function App() {
+    return (
+        <div style={{ margin: '0 auto', width: '800px' }}>
+            <Typography variant="h5" align="center">
+                A super simple page editor
+            </Typography>
+            <Grid container spacing={3} style={{ paddingTop: '10px' }}>
+                <Topbar />
+                <Grid item xs>
+                    <Container padding={5} background="#eee">
+                        <Card />
+                    </Container>
+                </Grid>
+                <Grid item xs={3}>
+                    <Paper>
+                        <Toolbox />
+                        <SettingsPanel />
+                    </Paper>
+                </Grid>
+            </Grid>
+        </div>
+    );
 }
 
-const Entry = () => {
-    return (
-        <Base>
-            <Boilerplate>
-                <EditableComponent />
-            </Boilerplate>
-        </Base>
-    );
-};
-export default Entry;
-
 const mountNode = document.getElementById('app');
-ReactDOM.render(<Entry />, mountNode);
+ReactDOM.render(<App />, mountNode);
