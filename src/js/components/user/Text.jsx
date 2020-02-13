@@ -1,8 +1,18 @@
 import React from "react";
-export const Text = ({text, fontSize}) => {
+import { Typography } from "@material-ui/core";
+import { useNode } from "@craftjs/core";
+export const Text = ({text}) => {
+  const { connectors: {connect, drag} } = useNode();
   return (
-      <div>
-         <p style={{fontSize}}>{text}</p>
-      </div>
+     <div 
+      ref={ref => connect(drag(ref))}
+    >
+      <p>{text}</p>
+    </div>
   )
+}
+Text.craft = {
+  rules: {
+    canDrag: (node) => node.data.props.text != "Drag"
+  }
 }
