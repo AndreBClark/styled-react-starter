@@ -4,7 +4,7 @@
     "description": "Cosmic Division Front End Boilerplate",
     "main": "src/entry.js",
     "scripts": {
-        "start": "parcel src/index.html",
+        "start": "parcel src/index.html --no-source-maps",
         "build": "parcel build src/index.html --public-url ./",
         "format": "npm run format-css && npm run format-js && npm run format-html",
         "format-css": "prettier --write src/styles/**/*.{css,scss} ",
@@ -23,9 +23,10 @@
     },
     "homepage": "https://github.com/AndreBClark/cosmicdivision-boilerplate#readme",
     "dependencies": {
+        "babel-plugin-tailwind-components": "^0.5.10",
         "react": "^16.12.0",
         "react-dom": "^16.12.0",
-        "babel-plugin-tailwind-components": "^0.5.10",
+        "react-live": "^2.2.2",
         "styled-components": "^5.0.1"
     },
     "devDependencies": {
