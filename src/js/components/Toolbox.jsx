@@ -21,6 +21,7 @@ export const Toolbox = () => {
         direction="column"
         alignItems="center"
         justify="center"
+        position="fixed"
         spacing={1}
       >
         <Box pb={2}>

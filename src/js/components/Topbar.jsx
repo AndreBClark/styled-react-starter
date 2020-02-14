@@ -27,7 +27,7 @@ export const Topbar = ({ onLoadState }) => {
   const [stateToLoad, setStateToLoad] = useState(null);
 
   return (
-    <Box px={1} py={1} mt={3} mb={1} bgcolor="#cbe8e7">
+    <Box px={1} py={1} mb={1} bgcolor="#cbe8e7">
       <Grid container alignItems="center">
         <Grid item xs>
           <FormControlLabel
