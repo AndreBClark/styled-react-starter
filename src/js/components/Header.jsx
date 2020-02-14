@@ -5,8 +5,7 @@ import {
   Grid,
   Button as MaterialButton
 } from "@material-ui/core";
-import { useEditor, Canvas } from "@craftjs/core";
-import { Container } from "./user/Container";
+import { useEditor } from "@craftjs/core";
 import { Card } from "./user/Card";
 import { Button } from "./user/Button";
 import { Text } from "./user/Text";
@@ -42,16 +41,6 @@ export const Toolbox = () => {
             variant="contained"
           >
             Text
-          </MaterialButton>
-        </Grid>
-        <Grid container direction="column" item>
-          <MaterialButton
-            ref={ref =>
-              connectors.create(ref, <Canvas is={Container} padding={20} />)
-            }
-            variant="contained"
-          >
-            Container
           </MaterialButton>
         </Grid>
         <Grid container direction="column" item>
