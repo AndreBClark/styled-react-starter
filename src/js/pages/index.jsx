@@ -20,7 +20,7 @@ export default function App() {
   const classes = useStyles();
 
   return (
-    <div style={{ margin: "0 auto", width: "800px" }}>
+    <div style={{ margin: "0 auto", width: "100%" }}>
       <Typography style={{ margin: "20px 0" }} variant="h5" align="center">
         Basic Page Editor
       </Typography>
