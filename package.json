@@ -51,7 +51,7 @@
         "prettier-eslint": "^9.0.1",
         "prettier-eslint-cli": "^5.0.0",
         "sass": "^1.25.0",
-        "stylelint": "^13.0.0",
+        "stylelint": "^15.10.1",
         "stylelint-config-recommended": "^3.0.0",
         "stylelint-prettier": "^1.1.2",
         "tailwind.macro": "^1.0.0-alpha.10",
